@@ -25,12 +25,8 @@ export const Counter = ({ title }) => {
         />
       </div>
 
-      <button role={"button"} onClick={() => setCount(count + 1)}>
-        Increment by one
-      </button>
-      <button role={"button"} onClick={() => setCount(count - 1)}>
-        Decrement by one
-      </button>
+      <button onClick={() => setCount(count + 1)}>Increment by one</button>
+      <button onClick={() => setCount(count - 1)}>Decrement by one</button>
     </div>
   );
 };
