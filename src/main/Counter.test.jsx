@@ -1,6 +1,5 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
 import { Counter } from "./Counter";
 
 it("should render a counter with value of 1", () => {
