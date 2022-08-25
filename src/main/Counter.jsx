@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-redundant-roles */
 import React, { useState } from "react";
 
 export const Counter = ({ title }) => {
@@ -24,8 +25,9 @@ export const Counter = ({ title }) => {
           onChange={handleClick}
         />
       </div>
-
-      <button onClick={() => setCount(count + 1)}>Increment by one</button>
+      <button role={"button"} onClick={() => setCount(count + 1)}>
+        Increment by one
+      </button>
       <button onClick={() => setCount(count - 1)}>Decrement by one</button>
     </div>
   );
