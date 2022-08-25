@@ -12,8 +12,9 @@ export const Counter = ({ title }) => {
       <h1 data-testid="testing">{title}</h1>
       <div>
         {" "}
-        <h1>{count}</h1>
+        {/* <h1>{count}</h1> */}
         <input
+          style={{ padding: "10px", marginBottom: "20px" }}
           role={"alert"}
           type="number"
           min={1}
