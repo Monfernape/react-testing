@@ -4,7 +4,7 @@ import { Counter } from "./Counter";
 
 it("should render a counter with value of 1", () => {
   render(<Counter />);
-  let basicCounter = screen.getByRole("alert");
+  const basicCounter = screen.getByRole("alert");
   expect(basicCounter).toHaveValue(1);
 });
 
